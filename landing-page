@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Ethereum Tweet Library</title>
+</head>
+<body>
+  <style>
+      body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(https://i.ibb.co/9pvZr2z/bg.png);
+  background-size: cover;
+  
+}
+.main{
+  position: relative;
+
+}
+.side__nav{
+  width: 5vw;
+  height: 100vh;
+  background-color: rgba(0,0,0, 0.9);
+  position: fixed;
+  position: relative;
+}
+
+.side__nav-icons{
+  position: absolute;
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  top: 3%;
+  
+}
+.nav-icon{
+  height: 1.7rem;
+  width: 1.7rem;
+  cursor: pointer;
+}
+.app-name{
+  position: absolute;
+  height: 35%;
+  width: 100%;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  
+  
+  
+  
+}
+.ethereum-text{
+  font-size: 1.3rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  margin-right: 60%;
+  font-family: 'Nunito';
+  
+  
+  
+}
+.tweet-library-text{
+  font-size: 1rem;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform: rotate(180deg);
+  margin-left: 50%;
+  font-family: 'Nunito';
+  
+}
+.search{
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  width: 20%;
+  height: 1.6rem;
+  display: flex;
+}
+.search-input{
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 2rem;
+  padding-left: 2.5rem;
+}
+.search-input::placeholder{
+  font-style: italic;
+  color: rgba(0,0,0, 0.6);
+}
+.search-input:focus{
+  border-radius: inherit;
+}
+.search-icon{
+  position: absolute;
+  margin-left: 0.18rem;
+  margin-top: 0.15rem;
+  background-color: rgba(0,0,0,0.7);
+  height: 100%;
+  width: 15%;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.fa-search{
+  color: white;
+}
+.content-icons{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.main-icon{
+  height: 4rem;
+  width: 3rem;
+  border: thin solid rgba(65,105,225, 0.9);
+  border-radius: 50%;
+  padding: 1rem;
+  cursor: pointer;
+}
+.main-icon:hover{
+  background-color: rgba(65,105,225, 0.9);
+}
+.row{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+
+
+
+  </style>
+  <div class="main">
+    <!--side Nav-->
+    <nav class="side__nav">
+      <div class="side__nav-icons">
+        
+        <img src="https://i.ibb.co/bHQk6kg/Iconly-Bold-Home.png" alt="" srcset="" id="home-icon" class="nav-icon">
+        <img src="https://i.ibb.co/Rgd0Q5R/Asset-16.png" alt="" srcset="" id="notification-icon" class="nav-icon">
+      </div> 
+      <div class="app-name">
+        <h2 class="ethereum-text">ETHEREUM</h2>
+        <h3 class="tweet-library-text">TWEET LIBRARY</h3>
+      </div>
+    </nav>
+    <!--end of side nav-->
+    <!-- search input with icon -->
+    <div class="search search-box">
+      <div class="search-icon">
+      <i class="fa fa-search"></i></div>
+      <input type="text" class="search-input" placeholder="search your tweets">
+      
+    </div>
+    <!--end of search input with icon-->
+
+    <div class="content-icons">
+      <div class="row1 row">
+        <img src="https://i.ibb.co/CH4DhVb/Asset-8-500x.png alt="" class="main-icon">
+        <img src="https://i.ibb.co/8zrG3kx/Asset-20.png" alt="" class="main-icon">
+        <img src="https://i.ibb.co/tBkBktR/Iconly-Bold-Activity.png" alt="" class="main-icon"> 
+      </div>
+
+      <div class="row2 row">
+        <img src="https://i.ibb.co/72P9f7f/Asset-9-500x.png" alt="" class="main-icon">
+        <img src="https://i.ibb.co/5FBQWWV/Asset-7-500x.png" alt="" class="main-icon">
+        <img src="https://i.ibb.co/mrnCxjM/Asset-6-500x.png" alt="" class="main-icon"> 
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
